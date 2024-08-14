@@ -1,0 +1,269 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: Brittany;
+    src: url('./assets/BrittanySignature.ttf');
+}
+
+@font-face {
+    font-family: trend-slab-one;
+    src: url('./assets/Trend-Slab-W00-One.ttf');
+}
+
+.hero-container {
+    background-image: url('./assets/gradient-background.jpg');
+    max-width: 100%;
+    height: auto;
+    background-position: center;
+}
+
+.cloud-top{
+    display: flex;
+    justify-content: end;
+}
+
+.cloud-bottom{
+    display: flex;
+    justify-content: start;
+}
+
+#cloud1 {
+    width: 20%;
+    margin-top: 25px;
+}
+
+#cloud2 {
+    width: 20%;
+}
+
+.introduction {
+    font-family: Brittany;
+    font-size: 100px;
+    color: #2b8d9f;
+    text-align: center;
+    text-shadow: 0em 0.0375em 0.061875em rgba(0, 0, 0, 0.105000);
+}
+
+.role {
+    font-family: trend-slab-one;
+    font-size: 30px;
+    color: #2b8d9f;
+    text-align: center;
+    text-shadow: 0em 0.0375em 0.061875em rgba(0, 0, 0, 0.105000);
+}
+
+.trees {
+    display: flex;
+}
+
+.trees-image {
+    width: 33.33%;
+}
+
+.resume-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.profile-pic-border {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #84d0de;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.resume-heading {
+    font-family: trend-slab-one;
+    text-shadow: 0em 0.0375em 0.061875em rgba(0, 0, 0, 0.105000);
+    color: #84d0de;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.resume-body {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.about-me {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+}
+
+#who-i-am {
+    text-align: center;
+    max-width: 60%;
+}
+
+#education {
+    flex-basis: 30%;
+}
+
+#skills {
+    flex-basis: 30%;
+}
+
+.contact-container {
+    display: flex;
+    gap: 25%;
+}
+
+.get-in-touch {
+    align-self: flex-start;
+    margin-left: 5%;
+}
+
+.contact-info {
+    margin-right: 5%;
+}
+
+.contact-me-button {
+    background-color: #84d0de;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.contact-me-button:hover {
+    background-color: #2b8d9f;
+}
+
+.footer-container {
+    background-color: #84d0de;
+    height: 25vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.footer-text {
+    color: #2b8d9f;
+    text-decoration: none;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+.footer-text:hover {
+    color: white;
+}
+
+.copyright {
+    color: white;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+@media(max-width: 1200px) {
+    .introduction {
+        font-size: 75px;
+    }
+
+    .role {
+        font-size: 22px;
+    }
+
+    .profile-pic-border {
+        width: 175px;
+        height: 175px;
+    }
+
+    .profile-pic {
+        height: 157px;
+        width: 157px;
+    }
+}
+
+@media(max-width: 992px) {
+    .introduction {
+        font-size: 82px;
+    }
+
+    .role {
+        font-size: 24px;
+    }
+
+    .profile-pic-border {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-pic {
+        height: 135px;
+        width: 135px;
+    }
+}
+
+@media(max-width: 768px) {
+    .introduction {
+        font-size: 50px;
+    }
+
+    .role {
+        font-size: 15px;
+    }
+
+    .profile-pic-border {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-pic {
+        height: 90px;
+        width: 90px;
+    }
+
+    .about-me {
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .contact-container {
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .resume-heading {
+        font-size: 25px;
+    }
+
+    .resume-body {
+        font-size: 15px;
+    }
+}
